@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css2?family=Nosifer&family=Poppins:wght@300&family=Roboto:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+}
+.container {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.aside {
+  width: 100px;
+  height: 100vh;
+  position: fixed;
+  background-color: rgb(50, 50, 50);
+}
+nav {
+  width: 92%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  left: 100px;
+  position: fixed;
+  background-color: rgb(50, 50, 50);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+nav .header {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  flex-wrap: wrap;
+}
+nav .options {
+  width: 100%;
+  height: 60px;
+}
+nav hr {
+  margin: 0 20px;
+}
+
+.aside .miniaside {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.aside h6 {
+  font-size: 10px;
+}
+.aside .fa-solid {
+  color: white;
+  cursor: pointer;
+}
+.aside .ok {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  cursor: pointer;
+  align-items: center;
+}
+.aside .ok p {
+  font-size: 10px;
+  color: white;
+}
+.aside .zero {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+nav .header .logo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav .header .logo .fa-brands {
+  color: red;
+  font-size: 35px;
+}
+nav .header .logo p {
+  font-size: 20px;
+  padding-left: 10px;
+  color: white;
+}
+nav .header .inputs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+nav .header .inputs .search {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 60px;
+  background-color: rgb(88, 88, 88);
+}
+nav .header .inputs .search .fa-solid {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+nav .header .inputs .micro {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(21, 21, 21);
+  position: relative;
+  border-radius: 50px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+nav .header .inputs .micro .fa-solid {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+nav .header .inputs input {
+  width: 550px;
+  height: 50px;
+  outline: none;
+  border: none;
+  padding-left: 10px;
+  background-color: black;
+  color: white;
+}
+nav .header .icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .header .icons .fa-solid {
+  font-size: 20px;
+  color: white;
+  margin: 0 20px;
+  cursor: pointer;
+}
+nav .header .icons img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+nav .header .icons sup {
+  background-color: red;
+  border-radius: 40px;
+  font-size: 10px;
+}
+nav .options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  color: white;
+}
+nav .options .all {
+  background-color: rgb(69, 69, 69);
+  padding: 8px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.videosection {
+  width: 100%;
+  height: auto;
+}
+.videosection .minivideo {
+  position: absolute;
+  top: 130px;
+  width: 92%;
+  right: 2px;
+  height: 2000px;
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  z-index: 0;
+  background-color: rgb(6, 6, 6);
+  color: white;
+  grid-row-gap: 20px;
+  grid-column-gap: 15px;
+  padding: 20px;
+}
+
+.videosection .minivideo .v1 img {
+  width: 100%;
+  height: 250px;
+  background-size: cover;
+
+  cursor: pointer;
+}
+.videosection .minivideo .v1 {
+  position: relative;
+}
+.videosection .minivideo .v1 .time {
+  position: absolute;
+  width: 50px;
+  height: 23px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 10px;
+  right: 10px;
+  bottom: 130px;
+  color: white;
+  text-align: center;
+}
+.videosection .minivideo .v1 .text {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 0 10px;
+  margin-top: 5px;
+}
+.videosection .minivideo .v1 .text img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.videosection .minivideo .v1 .text p {
+  font-size: 18px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.videosection .minivideo .v1 .channel p {
+  padding-left: 70px;
+  font-size: 14px;
+  color: rgb(218, 218, 218);
+}
+.togglesidebar {
+  width: 300px;
+  height: 100vh;
+  z-index: 2;
+  background-color: rgb(50, 50, 50);
+  position: fixed;
+  transform: translateX(-100%);
+}
+.togglesidebar .logo {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+  color: white;
+}
+
+.togglesidebar .logo .bars {
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
+}
+.togglesidebar .logo .next {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.togglesidebar .logo .next .fa-brands {
+  font-size: 35px;
+  color: red;
+}
+.togglesidebar .logo .next p {
+  padding-left: 5px;
+  font-size: 25px;
+  font-weight: bold;
+}
+.togglesidebar .logo .next sup {
+  font-size: 12px;
+}
+.togglesidebar .maincontent {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0px;
+}
+.togglesidebar .maincontent .okk {
+  width: 100%;
+  height: 60px;
+  background-color: rgb(50, 50, 50);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  color: white;
+  padding-left: 50px;
+  cursor: pointer;
+}
+.togglesidebar .maincontent .okk:hover {
+  background: rgb(107, 107, 107);
+}
+.togglesidebar .maincontent .okk p {
+  padding-left: 40px;
+}
